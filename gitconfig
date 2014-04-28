@@ -1,0 +1,32 @@
+[user]
+    name = Siegfried-Angel Gevatter Pujals
+    email = siegfried@gevatter.com
+[url "ssh://sgevatter@git.gnome.org/git/"]
+    insteadof = gnome:
+[url "git+ssh://git.collabora.co.uk/git/user/sgevatter/"]
+    insteadof = collabora:
+[alias]
+    wdiff = diff --color-words
+    wshow = show --color-words
+    st = status
+    ci = commit
+    co = checkout
+    br = branch
+    di = diff
+    unstage = reset HEAD --
+    last = log -1 HEAD
+    undo = reset --soft HEAD^
+    meld = !~/lib/git-meld/git-meld.pl
+[color]
+    ui = auto
+[rerere]
+    enabled = true
+[core]
+    excludesfile = /home/rainct/.gitignore_global
+[diff]
+    tool = meld
+    guitool = meld
+[difftool]
+    prompt = false
+[push]
+	default = matching
