@@ -1,0 +1,29 @@
+# Disable NumLock key
+numlockx on
+xmodmap -e "keycode 77 = """
+
+# Enable restarting X with Ctrl+Alt+Backspace
+setxkbmap -option terminate:ctrl_alt_bksp
+
+# Configure keyboard
+#setxkbmap -layout es
+#xset r rate 200 30
+
+#eval `gnome-keyring-daemon`
+
+# Launch awesome
+awesome &
+
+# Screen lock
+#xautolock -time 30 -locker 'slock' &
+#xscreensaver -no-splash &
+
+# Launch background apps
+nm-applet &
+synapse -s &
+dropbox start &
+#skype &
+
+# Startup applications
+google-chrome &
+#terminator &

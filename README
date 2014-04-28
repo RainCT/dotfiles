@@ -3,13 +3,12 @@ dotfiles
 
 Installation:
 
-```
-git clone --recursive git@github.com:RainCT/dotfiles.git ~/.dotfiles
-cd ~/.dotfiles; git submodule update --init
+    git clone --recursive git@github.com:RainCT/dotfiles.git ~/.dotfiles
+    cd ~/.dotfiles; git submodule update --init
 
-ln -s ~/.dotfiles/zshrc ~/.zshrc
-ln -s ~/.dotfiles/gitconfig ~/.gitconfig
-```
+    ln -s ~/.dotfiles/zshrc ~/.zshrc
+    ln -s ~/.dotfiles/gitconfig ~/.gitconfig
+    ln -s ~/.dotfiles/xprofile ~/.xprofile
 
 See also:
  * https://github.com/RainCT/vim-config
